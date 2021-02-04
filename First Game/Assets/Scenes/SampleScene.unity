@@ -156,7 +156,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5f0c18e8c142aed4390c1680c599b7e4, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -336,6 +336,7 @@ GameObject:
   - component: {fileID: 1840215996}
   - component: {fileID: 1840215998}
   - component: {fileID: 1840215999}
+  - component: {fileID: 1840216000}
   m_Layer: 0
   m_Name: Plate
   m_TagString: Untagged
@@ -454,6 +455,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1840216000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840215995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de94c3b2b0281e2479d458ba57c3b1ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2102396216
 GameObject:
   m_ObjectHideFlags: 0
