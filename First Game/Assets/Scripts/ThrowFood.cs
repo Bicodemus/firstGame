@@ -23,7 +23,7 @@ public class ThrowFood : MonoBehaviour
         for (; ; )
         {
             Instantiate(food);
-            yield return new WaitForSeconds(2.5f);
+            yield return new WaitForSeconds(Random.Range(1f, 4f));
         }
     }
 }

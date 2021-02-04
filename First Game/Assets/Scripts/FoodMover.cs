@@ -10,7 +10,7 @@ public class FoodMover : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        body.AddForce(transform.right * 135);
+        body.AddForce(transform.right * 200);
     }
 
     // Update is called once per frame
