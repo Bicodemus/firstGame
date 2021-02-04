@@ -28,6 +28,7 @@ public class FoodCollision : MonoBehaviour
             {
                 other.isKinematic = true;
                 other.transform.SetParent(curr.transform);
+                other.tag = "onPlate";
             }
             
             
