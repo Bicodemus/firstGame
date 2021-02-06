@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Plate
   - onPlate
+  - Chef1
+  - Chef2
+  - Floor
   layers:
   - Default
   - TransparentFX

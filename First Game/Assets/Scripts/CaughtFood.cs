@@ -19,12 +19,12 @@ public class CaughtFood : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
         food = collision.gameObject;
-        food.GetComponent<Rigidbody2D>().isKinematic = true;
         food.transform.SetParent(plate.transform);
+        food.GetComponent<Rigidbody2D>().isKinematic = true;
         food.tag = "onPlate";
-        Debug.Log("hit");
-        Debug.Log("hit2");
+        GameManager.Instance.incScore(1);
     }
 }

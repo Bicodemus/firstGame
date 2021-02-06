@@ -22,13 +22,20 @@ public class FoodCollision : MonoBehaviour
     {
         
         other = collision.gameObject.GetComponent<Rigidbody2D>();
+
+        
         
         if (!other.CompareTag("Plate")){
-            if (!other.CompareTag("onPlate"))
+            /*if (other.CompareTag("Floor"))
             {
-                other.isKinematic = true;
+                Destroy(this.gameObject);
+            }*/
+            if (!other.CompareTag("onPlate") && !other.CompareTag("Floor"))
+            {
+               
                 other.transform.SetParent(curr.transform);
                 other.tag = "onPlate";
+                GameManager.Instance.incScore(1);
             }
             
             

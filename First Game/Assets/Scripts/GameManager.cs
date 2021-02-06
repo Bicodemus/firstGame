@@ -28,12 +28,18 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scoreText.text = "Working";
+  
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void incScore(int s)
+    {
+        score += s;
+        scoreText.text = "Pancakes Stacked: " + score;
     }
 }
